@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doolittle-album>
+  <metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+    <release id="abb2d8b4-e6d9-3619-812b-d2582554e24f">
+      <title>Doolittle</title>
+      <status>Official</status>
+      <quality>normal</quality>
+      <text-representation>
+        <language>eng</language>
+        <script>Latn</script>
+      </text-representation>
+      <artist-credit>
+        <name-credit>
+          <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+            <name>Pixies</name>
+            <sort-name>Pixies</sort-name>
+          </artist>
+        </name-credit>
+      </artist-credit>
+      <date>1989-04-17</date>
+      <country>GB</country>
+      <release-event-list count="1">
+        <release-event>
+          <date>1989-04-17</date>
+          <area id="8a754a16-0027-3a29-b6d7-2b40ea0481ed">
+            <name>United Kingdom</name>
+            <sort-name>United Kingdom</sort-name>
+            <iso-3166-1-code-list>
+              <iso-3166-1-code>GB</iso-3166-1-code>
+            </iso-3166-1-code-list>
+          </area>
+        </release-event>
+      </release-event-list>
+      <barcode>5014436905025</barcode>
+      <asin>B000026YFS</asin>
+      <cover-art-archive>
+        <artwork>false</artwork>
+        <count>0</count>
+        <front>false</front>
+        <back>false</back>
+      </cover-art-archive>
+      <label-info-list count="1">
+        <label-info>
+          <catalog-number>CAD 905 CD</catalog-number>
+          <label id="a539bb1e-f2e1-4b45-9db8-8053841e7503">
+            <name>4AD</name>
+            <sort-name>4AD</sort-name>
+            <label-code>5807</label-code>
+          </label>
+        </label-info>
+      </label-info-list>
+      <medium-list count="1">
+        <medium>
+          <position>1</position>
+          <format>CD</format>
+          <disc-list count="22">
+            <disc id="03fk1e2PboXslRE1esyC8v.tMcs-">
+              <sectors>174600</sectors>
+            </disc>
+            <disc id="1LVaT0dSPvA8zDuixWJobsnO.FU-">
+              <sectors>174525</sectors>
+            </disc>
+            <disc id="1YBXlrtbADgWAts.O2ZsIvz7UVM-">
+              <sectors>176461</sectors>
+            </disc>
+            <disc id="4cs2H10t2BoM61W0gxCr_TEfoRE-">
+              <sectors>174667</sectors>
+            </disc>
+            <disc id="6mg3N7zy2HR0XVGHExNSiNRHHL8-">
+              <sectors>176484</sectors>
+            </disc>
+            <disc id="AO51EaHVzbNYh7wWOeF_AP4Immg-">
+              <sectors>174610</sectors>
+            </disc>
+            <disc id="AvloQ9g.Nf1AK4pd6oRESXd29NQ-">
+              <sectors>174455</sectors>
+            </disc>
+            <disc id="BnOYyyAWpyNuB5slcAOcWY6Igzo-">
+              <sectors>174435</sectors>
+            </disc>
+            <disc id="DsMZ7RBgWPAOKohqK08Bqk0l3ms-">
+              <sectors>174455</sectors>
+            </disc>
+            <disc id="EbuphpAYSz.8HFnqfTaTQckQjIY-">
+              <sectors>174525</sectors>
+            </disc>
+            <disc id="Gy78RYWwqDtDWCUgxMrE6_XGTec-">
+              <sectors>174720</sectors>
+            </disc>
+            <disc id="Vh640hozn69FqCq8xjwIiJLFO6Q-">
+              <sectors>174440</sectors>
+            </disc>
+            <disc id="aHp5F_XFMy0tU0T03PxMMnZkMQ0-">
+              <sectors>174330</sectors>
+            </disc>
+            <disc id="eWkEPQ_aeGeE6fKEP2XnWPg_M.k-">
+              <sectors>174610</sectors>
+            </disc>
+            <disc id="gC9n.rXvIun.SbiMhfGVcnCl7Lk-">
+              <sectors>174585</sectors>
+            </disc>
+            <disc id="gYttnQycbenyJcDyz4ewRJP42Ps-">
+              <sectors>174640</sectors>
+            </disc>
+            <disc id="gceqfJ6oLvDoSUObbVzitYCe23U-">
+              <sectors>174420</sectors>
+            </disc>
+            <disc id="iK114.g.ONTQJ2MCXH150XCe0.Q-">
+              <sectors>174740</sectors>
+            </disc>
+            <disc id="rPlN1WgPgTdNIbstH1JXwg4652g-">
+              <sectors>174455</sectors>
+            </disc>
+            <disc id="t.Ol4BIA6yD_3wuna4gHrjo6C3s-">
+              <sectors>174428</sectors>
+            </disc>
+            <disc id="wPGXRnccILmy6oF7Dym0zHtTyPA-">
+              <sectors>174662</sectors>
+            </disc>
+            <disc id="wxNQbe.W_.nJZyhi8xX48SK.q6c-">
+              <sectors>173022</sectors>
+            </disc>
+          </disc-list>
+          <track-list count="15" offset="0">
+            <track id="51087ffe-e3a8-3655-ad5f-d63af83d3f11">
+              <position>1</position>
+              <number>1</number>
+              <length>172466</length>
+              <recording id="f920f155-0864-4e7d-b310-6fe88ddfa8aa">
+                <title>Debaser</title>
+                <length>172466</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="2b33dc55-e2bc-3a19-b14b-e01ab41f1396">
+              <position>2</position>
+              <number>2</number>
+              <length>115706</length>
+              <recording id="dac6aecc-fbf7-418b-9bdc-1107469b7768">
+                <title>Tame</title>
+                <length>115706</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="31c5b0ba-3180-3ad4-a032-55c24a49de90">
+              <position>3</position>
+              <number>3</number>
+              <length>124800</length>
+              <recording id="62721352-9eb6-45cf-93c4-9e5ecb178116">
+                <title>Wave of Mutilation</title>
+                <length>124800</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="fd80e700-7aa2-349f-a615-2f81c82b35cc">
+              <position>4</position>
+              <number>4</number>
+              <length>154760</length>
+              <recording id="bef9dc6e-49d0-41e5-95f7-73fe9babf7b3">
+                <title>I Bleed</title>
+                <length>154760</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="5a4452b4-f3f3-34b7-a9d6-ca3cd46e80ab">
+              <position>5</position>
+              <number>5</number>
+              <length>201706</length>
+              <recording id="cbec6fa8-a950-471d-b92e-f0c39255f488">
+                <title>Here Comes Your Man</title>
+                <length>201706</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="c4521373-a667-3810-ab04-d97bb45c0c29">
+              <position>6</position>
+              <number>6</number>
+              <length>141360</length>
+              <recording id="e675d6a8-a959-4021-8acf-677d522f2bf1">
+                <title>Dead</title>
+                <length>141360</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="455c507c-afe2-3983-aa5c-e2961c6b457d">
+              <position>7</position>
+              <number>7</number>
+              <length>176466</length>
+              <recording id="7e4bcb1b-ebc2-4a26-905b-5303e54e6f3e">
+                <title>Monkey Gone to Heaven</title>
+                <length>176466</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="def2ab31-b1da-38e7-af57-b69cba6b9fab">
+              <position>8</position>
+              <number>8</number>
+              <length>125773</length>
+              <recording id="8365d142-fbba-4c26-b00e-4f0f58db5bb0">
+                <title>Mr. Grieves</title>
+                <length>125773</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="ba918004-db39-3c54-a201-b780144f0ec5">
+              <position>9</position>
+              <number>9</number>
+              <length>84200</length>
+              <recording id="40916596-c216-4d3d-b84c-ce6560cde96d">
+                <title>Crackity Jones</title>
+                <length>84200</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="4a278001-243f-3bcb-b5e2-987fcc3ab063">
+              <position>10</position>
+              <number>10</number>
+              <length>163666</length>
+              <recording id="7c098bab-ad13-440c-ab7a-5cb8f6a4deec">
+                <title>La La Love You</title>
+                <length>163666</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="c5927931-d86d-3abb-8862-2d1bc5c83c04">
+              <position>11</position>
+              <number>11</number>
+              <length>231600</length>
+              <recording id="22394ab7-22d9-4d85-92a3-a2bf504ebb90">
+                <title>No. 13 Baby</title>
+                <length>231600</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="2b3d84c0-2ad5-3c0c-882c-970806af4498">
+              <position>12</position>
+              <number>12</number>
+              <length>109533</length>
+              <recording id="93ad0c24-860c-4fd4-82a4-88a584aea09e">
+                <title>There Goes My Gun</title>
+                <length>109533</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="3510c6a1-f9e6-3027-b5ef-714cbb85b525">
+              <position>13</position>
+              <number>13</number>
+              <length>211466</length>
+              <recording id="367f977e-21e6-4c94-8b56-d3647af67988">
+                <title>Hey</title>
+                <length>211466</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="55fd6e7a-63d3-3110-b92e-fb37ee21c8f9">
+              <position>14</position>
+              <number>14</number>
+              <length>145226</length>
+              <recording id="ca3e4947-0699-4654-b52a-fb4ef95d63da">
+                <title>Silver</title>
+                <length>145226</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+            <track id="0f404d8d-04a6-37cc-b34a-e031c15a2716">
+              <position>15</position>
+              <number>15</number>
+              <length>164906</length>
+              <recording id="1f8f65bf-c289-454d-a46c-700b393ea3bf">
+                <title>Gouge Away</title>
+                <length>164906</length>
+                <artist-credit>
+                  <name-credit>
+                    <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+                      <name>Pixies</name>
+                      <sort-name>Pixies</sort-name>
+                    </artist>
+                  </name-credit>
+                </artist-credit>
+              </recording>
+            </track>
+          </track-list>
+        </medium>
+      </medium-list>
+    </release>
+  </metadata>
+</doolittle-album>
