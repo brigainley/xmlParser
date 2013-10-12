@@ -1,87 +1,59 @@
 /*
   * File:   main.cpp
   * Author: Brianna Gainley, brianna_gainley@student.uml.edu
-  * With code taken from Jesse M. Heines, from a given solution
+  * With code taken from Jesse M. Heines, from a given partial solution
   *
   * Created on September 16, 2013
+  * Edited on October 8th, 2013
   */
 
 #include <cstdlib>
 #include <iostream>
 #include <fstream>
-#include <vector>   // added after class
-#include <string>   // added after class
-#include <iomanip>  // added after class
+#include <vector>   
+#include <string>   
+#include <iomanip>  
 #include "Element.h"
 
 using namespace std;
 
-string checkStr( string strOpening ); // declaration for function to check content of string
+// global variables
+vector<Element *> vecAllElements;  // vector of pointers to elements
+vector<Element * > vecOpenElements; // vecotr of open elements
+vector<string> vecString ;  // all lines in file
+int lineNum = 0;  // counter to keep track of which line you are on in the file
+enum ParserState { UNKNOWN, STARTING_DOCUMENT, DIRECTIVE,
+				   ELEMENT_OPENING_TAG, ELEMENT_CONTENT, ELEMENT_NAME_AND_CONTENT,
+				   ELEMENT_CLOSING_TAG, SELF_CLOSING_TAG,
+				   STARTING_COMMENT, IN_COMMENT, ENDING_COMMENT, ONE_LINE_COMMENT,
+				   ERROR } ; // all parser states
+ParserState ps = STARTING_DOCUMENT;
+
+// extra function definitions
+string openingTag( string strOpening );
+void readFile( ifstream& file, vector<string> vecFile );
+void printState( ParserState ps, string str );
+void checkStack();
+ParserState determineState( string str );
+ParserState getXMLData( string strLine, string& strElementName, string& strContent,
+						int nStartPos, int& nEndPos, ParserState currentState );
 
 int main(int argc, char** argv) {
 
-   vector<Element *> vecElementPtrs;  // vector of pointers to elements
-   vector<string> vecString ;  // all lines in file
-   string str ;   // and single, individual line read from the file
-
+   // variable definitions
    ifstream infile( "Doolittle.xml" ) ; //XML file to be read
    
-   bool bContinue = true ;  // loop controller
-   char line[256] ;   // C version of a string
-   int lineNum = 0;  // counter to keep track of which line you are on in the file
-   string tmpString;
-   int test = 0;
-
-   // loop to read lines in continuously and add them each to the end of the vector
-   while ( bContinue ) {    
-     infile.getline( line, 256 ) ;
-     str = line ; 
-	 test++;
-	 lineNum++; // increment line number
-
-     bContinue = ( str.length() > 0 ) ;
-     if ( bContinue ) {
-      vecString.push_back( str ) ;  
-
-	  tmpString = checkStr( str ); // check string function to see if there is an opening tag
-
-		if( tmpString != "NULL" ) { // if there was a useful string detected
-			Element* tmpEl = new Element ( tmpString, lineNum );  // create a new Element object
-			vecElementPtrs.push_back( tmpEl );  // add the new object to the vector
-		}	
-	 }
-
-   }
+   readFile( infile, vecString );
 
    // close the input file to clean up
    infile.close() ;
    
-   // output a confirmation message to the user
-   cout << "The program read " << vecString.size() << 
-           " lines from the file." << endl ;
-   
-   // print the lines read
-   cout << endl ;
-   for ( int k = 0 ; k < vecString.size() ; k++ ) {
-     cout << std::setw( 3 ) << k+1 << ":  " << vecString.at( k ) << endl ;
-   }
-
-   // start printing elements
-   cout << endl << "/********************ELEMENT NAMES************************/" << endl;
-
-   // print the elements found and their line numbers
-   cout << endl;
-   for( int k = 0; k < vecElementPtrs.size(); k++ ) {
-	   cout << std::setw( 3 ) << vecElementPtrs[k] -> getNLineNo() << ":  " << vecElementPtrs[k] -> getStrElementName() << endl;
-   }
-
    return 0;
 }
 
-
-
 // function checks for opening tags for each string in file
-string checkStr( string strOpening ) {
+string openingTag( string strOpening ) {
+
 
 	size_t strBegin;
 	size_t strRB;
@@ -106,7 +78,171 @@ string checkStr( string strOpening ) {
 		}
 	}
 
-	return "NULL";
+	return "YA DONE GOOFED";
 
 }
 
+// function reads in file declared in ifstream
+void readFile( ifstream& file, vector<string> vecFile ) {
+	
+	// variable declarations
+	bool bContinue = true ;  // loop controller	
+    char line[256] ;   // C version of a string
+	string str ;   // and single, individual line read from the file
+	
+	// loop to read lines in continuously and add them each to the end of the vector
+    while ( bContinue ) {    
+     file.getline( line, 256 ) ;
+     str = line ; 
+	 lineNum++; // increment line number
+
+	 // if the string length is greater than 0 (if there is another string), continue
+     bContinue = ( str.length() > 0 ) ;
+     if ( bContinue ) {
+      vecString.push_back( str ) ;
+
+	  // print current string
+	  cout << str << endl;
+
+	  // determine what the preceding line was and show it
+	  ps = determineState( str );
+	  printState( ps, str );
+	  }	
+	}
+
+	return;
+}
+
+// function that displays parser state based on enumeration
+void printState( ParserState ps, string str ) {
+	
+	cout << "Parser state = ";
+	// switch statement to display parser state
+	switch( ps ) {
+		case UNKNOWN: cout << "UNKNOWN\n"; break;
+		case STARTING_DOCUMENT: cout << "STARTING_DOCUMENT\n"; break;
+		case DIRECTIVE: 
+			cout << "DIRECTIVE\n"; 
+			cout << "Directive = " << str.substr(2, str.length() - 4 ) << endl;
+			break;
+		case ELEMENT_OPENING_TAG: 
+			cout << "ELEMENT_OPENING_TAG\n"; 
+			vecOpenElements.push_back(vecAllElements.back());
+			cout << "Opening element found: " << vecOpenElements[vecOpenElements.size() - 1] -> getStrElementName() << endl;
+			cout << "Stack now contains: ";
+			for( int k = 0; k <= vecOpenElements.size() - 1; k++ ) {
+				cout << vecOpenElements[k] -> getStrElementName() << " " ;
+			}
+			cout << "\n\n";
+			break;
+		case ELEMENT_CONTENT: cout << "ELEMENT_CONTENT\n"; break;
+		case ELEMENT_NAME_AND_CONTENT: 
+			cout << "ELEMENT_NAME_AND_CONTENT\n"; 
+			cout << "Element tag found: " << vecAllElements[vecAllElements.size() - 1] -> getStrElementName() << endl;
+			cout << "Element content found: " << vecAllElements[vecAllElements.size() - 1] -> getStrElementContent() << endl;
+			cout << "Stack is unchanged.\n";
+			break;
+		case ELEMENT_CLOSING_TAG: 
+			cout << "ELEMENT_CLOSING_TAG\n"; 
+			cout << "Element closed: " << vecOpenElements[vecOpenElements.size() - 1] -> getStrElementName() << endl;
+			vecOpenElements.pop_back();
+			break;
+		case SELF_CLOSING_TAG: cout << "SELF_CLOSING_TAG\n"; break;
+		case STARTING_COMMENT: cout << "STARTING_COMMENT\n"; break;
+		case IN_COMMENT: cout << "IN_COMMENT\n"; break;
+		case ENDING_COMMENT: cout << "ENDING_COMMENT\n"; break;
+		case ONE_LINE_COMMENT: 
+			cout << "ONE_LINE_COMMENT\n"; 
+			cout << "Comment = " << str.substr(4, str.length() - 7 ) << endl;
+			break;
+		case ERROR: cout << "ERROR\n"; break;
+		default: cout << "DEFAULT\n"; break;
+	}
+	cout << endl;
+	return;
+}
+
+ParserState determineState( string str ) {
+
+	string newElement;
+	string elementContent;
+	
+	// begin enormous if clauses to determine state
+	if( str.back() != '>' ) {
+		if( ps == STARTING_COMMENT || ps == IN_COMMENT ) {
+			ps = IN_COMMENT;
+			return ps;
+		}
+		if( str[0] == '<' && str[1] == '!' && str[2] == '-' && str[3] == '-' ) {
+			ps = STARTING_COMMENT;
+			return ps;
+		}
+		else {
+			ps = UNKNOWN;
+			return ps;
+		}
+	}
+	else if( str.front() != '<' && str[str.length() - 3] == '-' && str[str.length() - 2] == '-' && str.back() == '>' ) {
+		ps = ENDING_COMMENT;
+		return ps;
+	}
+	else if( str[0] == '<' && str[1] == '?' ) {
+		ps = DIRECTIVE;
+		return ps;
+	}
+	else if( str[0] == '<' && str[1] == '!' && str[2] == '-' && str[3] == '-' ) {
+		ps = ONE_LINE_COMMENT;
+		return ps;
+	}
+	else if( str[str.find('<') + 1] == '/' ) {
+		ps = ELEMENT_CLOSING_TAG;
+		return ps;
+	}
+	else {		
+		newElement = openingTag( str );
+		int tmpStrnLen = str.length();
+		int tmpElementLen = newElement.length();
+		int tmpFirstBracket = str.find( '<' );
+		
+		tmpFirstBracket++;
+
+		if( str.compare(tmpStrnLen - tmpElementLen - 1, tmpElementLen, newElement) == 0 && str.find( '<', tmpFirstBracket ) != -1 ) { // calls a compare( pos, len, cmpStr ) to check if last part of string is tag again
+			ps = ELEMENT_NAME_AND_CONTENT;
+			int start = 0;
+			int end = 0;
+
+			start = str.find_first_of( '>', start+1 );
+
+			elementContent = str.substr(start + 1, (str.find_first_of('<', start) - start - 1) ); // finds substring between opening and closing tags
+			Element* tmpEl = new Element ( newElement, lineNum, elementContent );  // create a new Element object
+			vecAllElements.push_back( tmpEl );  // add the new object to the vector
+
+			return ps;
+		}
+		else if( str.compare(newElement.length() + 1, 2, "/>") == 0 ) {
+			ps = SELF_CLOSING_TAG;
+
+			elementContent = " ";
+			Element* tmpEl = new Element ( newElement, lineNum, elementContent );  // create a new Element object
+			vecAllElements.push_back( tmpEl );  // add the new object to the vector
+
+			return ps;
+		}
+		else {
+			ps = ELEMENT_OPENING_TAG;
+
+			elementContent = " ";
+			Element* tmpEl = new Element ( newElement, lineNum, elementContent );  // create a new Element object
+			vecAllElements.push_back( tmpEl );  // add the new object to the vector
+
+			return ps;
+		}
+	}
+
+	ps = ERROR;
+	return ps;
+}
+
+void checkStack() {
+
+}

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Brianna Gainley, brianna_gainley@student.uml.edu 
+    Doolittle.xml
+    Test XML document for Computing IV XML parser
+-->
 <doolittle-album>
   <metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
     <release id="abb2d8b4-e6d9-3619-812b-d2582554e24f">

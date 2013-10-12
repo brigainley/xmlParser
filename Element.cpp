@@ -14,14 +14,28 @@
   // Default Element Contructor
   Element::Element() {
 	  strTagName = "Placeholder";
-	  nLineNum = 999;
+	  nLineNum = 00000;
+	  strTagContent = "This is a blank element.";
   }
 
   // Constructor with arguments
-  Element::Element( string strElementName, int nLineNo ) {
-	  strTagName = strElementName;
-	  nLineNum = nLineNo;
+  Element::Element( string strElementName, int nLineNo, string strElementContent ) {
+	  setStrElementName( strElementName );
+	  setNLineNo( nLineNo );
+	  setStrElementContent( strElementContent );
   }
+
+  void Element::setNLineNo( int lineNo ) {
+	  nLineNum = lineNo;
+  }
+
+    void Element::setStrElementName( string strElementName ) {
+	  strTagName = strElementName;
+  }
+
+	void Element::setStrElementContent( string strElementContent ) {
+	  strTagContent = strElementContent;
+	}
 
   int Element::getNLineNo() const {
 		return nLineNum;
@@ -31,3 +45,6 @@
 		return strTagName;
 	}
 
+  string Element::getStrElementContent() const {
+		return strTagContent;
+	}

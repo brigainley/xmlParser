@@ -24,23 +24,22 @@
   
   private:
     string strTagName ; //name of element extracted from an element opening tag  
-    int nLineNum ;      // line number at which the element opening tag was found 
+    string strTagContent; // content of element
+	int nLineNum ;      // line number at which the element opening tag was found 
+
 
   public:
     Element();          // default constructor, which initializes data members to placeholder values
+    Element( string strElementName, int nLineNo, string strElementContent ) ;       // three parameter constructor
 
-    Element( string strElementName, int nLineNo ) ;       // two-parameter constructor
-														  // @param strElementName name of element extracted from an element opening tag
-														  // @param nLineNo line number at which the element opening tag was found
-
-    string toString() ;			   // represent the object's information as a string in a reasonable format
-								   // @return a string representing the object
+	void setNLineNo( int lineNo ); // sets the line number of the current element
+	void setStrElementName( string strElemenetName ); // sets the name of the current element
+	void setStrElementContent( string strElementContent ); // sets the content of the element
   
-	int getNLineNo() const ;       // get the line number at which the current element was found
-								   // @return line number at which the current element was found
- 
-    string getStrElementName() const ;      // get the name of the element found
-											// @return name of the element found  
+	int getNLineNo() const ;       // return the line number at which the current element was found	 
+    string getStrElementName() const ;      // return the name of the element found
+	string getStrElementContent() const; // return the content of the element
+				 
   };
   
   #endif  
