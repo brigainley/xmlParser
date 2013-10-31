@@ -33,10 +33,7 @@ ParserState ps = STARTING_DOCUMENT;
 string openingTag( string strOpening );
 void readFile( ifstream& file, vector<string> vecFile );
 void printState( ParserState ps, string str );
-void checkStack();
 ParserState determineState( string str );
-ParserState getXMLData( string strLine, string& strElementName, string& strContent,
-						int nStartPos, int& nEndPos, ParserState currentState );
 
 int main(int argc, char** argv) {
 
@@ -209,7 +206,6 @@ ParserState determineState( string str ) {
 		if( str.compare(tmpStrnLen - tmpElementLen - 1, tmpElementLen, newElement) == 0 && str.find( '<', tmpFirstBracket ) != -1 ) { // calls a compare( pos, len, cmpStr ) to check if last part of string is tag again
 			ps = ELEMENT_NAME_AND_CONTENT;
 			int start = 0;
-			int end = 0;
 
 			start = str.find_first_of( '>', start+1 );
 
@@ -241,8 +237,4 @@ ParserState determineState( string str ) {
 
 	ps = ERROR;
 	return ps;
-}
-
-void checkStack() {
-
 }
