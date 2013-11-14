@@ -32,7 +32,6 @@ vector<Element *> vecAllElements;
 /** vector of open elements */
 vector<Element *> vecOpenElements;
 
-#pragma region VARIABLES
 /** all lines in a file */
 vector<string> vecString ;
 
@@ -53,7 +52,6 @@ string trim( string& str );
 void findAttr( string strFull, size_t spacePos );
 void printTree( ofstream& xmlTreeFile, int vectorPos );
 
-#pragma endregion VARIABLES
  
 /** openingTag checks for opening tags for each line in file
  *  Only called if an element opening tag is found in parser state reading function
