@@ -1,0 +1,132 @@
+called: /Library/Developer/CommandLineTools/usr/bin/g++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/g++
+	-std=c++0x
+	-c
+	-g
+	main.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/g++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/g++
+	-std=c++0x
+	-c
+	-g
+	main.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/clang++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/clang++
+	-std=c++0x
+	-c
+	-g
+	main.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/clang++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/clang++
+	-std=c++0x
+	-c
+	-g
+	main.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/g++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/g++
+	-std=c++0x
+	-c
+	-g
+	element.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/g++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/g++
+	-std=c++0x
+	-c
+	-g
+	element.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/clang++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/clang++
+	-std=c++0x
+	-c
+	-g
+	element.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/clang++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/clang++
+	-std=c++0x
+	-c
+	-g
+	element.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/g++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/g++
+	-std=c++0x
+	-c
+	-g
+	auxFunctionsXML.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/g++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/g++
+	-std=c++0x
+	-c
+	-g
+	auxFunctionsXML.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/clang++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/clang++
+	-std=c++0x
+	-c
+	-g
+	auxFunctionsXML.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/clang++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/clang++
+	-std=c++0x
+	-c
+	-g
+	auxFunctionsXML.cpp
+
+called: /Library/Developer/CommandLineTools/usr/bin/g++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/g++
+	main.o
+	element.o
+	auxFunctionsXML.o
+	-o
+	assn04
+
+called: /Library/Developer/CommandLineTools/usr/bin/g++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/g++
+	main.o
+	element.o
+	auxFunctionsXML.o
+	-o
+	assn04
+
+called: /Library/Developer/CommandLineTools/usr/bin/clang++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/clang++
+	main.o
+	element.o
+	auxFunctionsXML.o
+	-o
+	assn04
+
+called: /Library/Developer/CommandLineTools/usr/bin/clang++
+	/Users/brigainley/Documents/computingProjects/xmlParser
+	/Library/Developer/CommandLineTools/usr/bin/clang++
+	main.o
+	element.o
+	auxFunctionsXML.o
+	-o
+	assn04
+
