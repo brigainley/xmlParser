@@ -32,6 +32,7 @@ vector<Element *> vecAllElements;
 /** vector of open elements */
 vector<Element *> vecOpenElements;
 
+#pragma region VARIABLES
 /** all lines in a file */
 vector<string> vecString ;
 
@@ -51,7 +52,9 @@ ParserState determineState( string str );
 string trim( string& str );
 void findAttr( string strFull, size_t spacePos );
 void printTree( ofstream& xmlTreeFile, int vectorPos );
+void printJSON( ofstream& jsonFile, int vectorPos );
 
+#pragma endregion VARIABLES
  
 /** openingTag checks for opening tags for each line in file
  *  Only called if an element opening tag is found in parser state reading function
@@ -97,9 +100,11 @@ void readFile( ifstream& file ) {
     string str;   // single, individual line read from the file
 	ofstream parserStateFile; // file to which parserStates will be output
 	ofstream xmlTreeFile; // writes tree structure with children and attributes to file
+	ofstream jsonFile; // writes XML as JSON 
 	
 	parserStateFile.open("parserStates.txt"); // creates text file for parser states
 	xmlTreeFile.open("xmlTreeFile.txt"); // creates text file for tree structure
+	jsonFile.open("jsonFile.txt"); // creates text file for JSON
 	    
     // loop to read lines in continuously and add them each to the end of the vector
     while ( file.getline( line, 256 ) ) {    
@@ -121,9 +126,13 @@ void readFile( ifstream& file ) {
     }
 
 	printTree( xmlTreeFile, 0 );
+	jsonFile << "{" << endl;
+	printJSON( jsonFile, 0 );
+	jsonFile << "}" << endl;
 
 	parserStateFile.close();
 	xmlTreeFile.close();
+	jsonFile.close();
 	cout << "\nProgram Success. See output files." << endl;
 	return;
 }
@@ -283,6 +292,78 @@ void printTree( ofstream& xmlTreeFile, int vectorPos ) {
 
 		// call function recursively to traverse entire tree
 		printTree( xmlTreeFile, newVecPos );
+	}
+	return;
+}
+
+/** printJSON prints out the XML file as a JSON file instead
+ *  @param jsonFile The file the json will be printed to
+ */
+void printJSON( ofstream& jsonFile, int vectorPos ) {
+	int newVecPos = vectorPos + 1;
+
+	// cycle through until end of vector is reached
+	if( vectorPos < vecAllElements.size() ) {
+
+		// print indent spaces for visual output
+		for( int i = 1; i < vecAllElements.at(vectorPos) -> getIndentationLevel(); i++ ) {
+			jsonFile << "  ";
+		}
+
+		// print element name
+		jsonFile << "\"" << vecAllElements.at(vectorPos) -> getStrElementName() << "\" : ";
+
+		// print attributes if there are any or start new bracket if element has no content
+		if( vecAllElements.at(vectorPos) -> getVecAttributeSize() != 0 || vecAllElements.at(vectorPos) -> getStrElementContent() == " " ) {
+			jsonFile << "{" << endl;
+			for( int i = 0; i < vecAllElements.at(vectorPos) -> getVecAttributeSize(); i++ ) {
+				// print indent spaces for visual output
+				for( int i = 1; i < vecAllElements.at(vectorPos) -> getIndentationLevel(); i++ ) {
+					jsonFile << "  ";
+				}
+				jsonFile << " \"" << vecAllElements.at(vectorPos) -> getAttributeName(i) << "\" : ";
+				jsonFile << "\"" << vecAllElements.at(vectorPos) -> getAttributeContent(i) << "\"";
+
+				// if there is no content in next element, close brackets and omit comma
+				if( ( vectorPos + 1 ) < vecAllElements.size() && vecAllElements.at(vectorPos + 1) -> getStrElementContent() == " " ) {
+					jsonFile << endl;
+					for( int i = 1; i < vecAllElements.at(vectorPos) -> getIndentationLevel(); i++ ) {
+						jsonFile << "  ";
+					}
+					jsonFile << "}" << endl;
+				}
+				else {
+					jsonFile << ", " << endl;
+				}
+			}
+		}
+
+		// print content if there is any
+		if( vecAllElements.at(vectorPos) -> getStrElementContent() != " " ) {
+			jsonFile << "\"" << vecAllElements.at(vectorPos) -> getStrElementContent() << "\"" << endl;
+		}
+
+		// if there is no content in next element, close brackets and omit comma
+		if( ( vectorPos + 1 ) < vecAllElements.size() && vecAllElements.at(vectorPos + 1) -> getStrElementContent() == " " ) {
+			jsonFile << endl;
+			for( int i = 1; i < vecAllElements.at(vectorPos) -> getIndentationLevel(); i++ ) {
+				jsonFile << "  ";
+			}
+			jsonFile << "}" << endl;
+		}
+
+
+		if( newVecPos < vecAllElements.size() ) { // check if this is the last element in tree
+			while( vecAllElements.at(newVecPos) -> getIndentationLevel() != vecAllElements.at(vectorPos) -> getIndentationLevel() ) {
+				newVecPos++;
+				if( newVecPos >= vecAllElements.size() ) break;
+			}
+		}
+
+		newVecPos = vectorPos + 1;
+
+		// call function recursively to traverse entire tree
+		printJSON( jsonFile, newVecPos );
 	}
 	return;
 }
