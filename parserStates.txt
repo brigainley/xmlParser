@@ -1,0 +1,2329 @@
+<!--
+Parser state = STARTING_COMMENT
+
+Author: Brianna Gainley, brianna_gainley@student.uml.edu
+Parser state = IN_COMMENT
+
+File: doolittle.xml
+Parser state = IN_COMMENT
+
+Created September 16th, 2013
+Parser state = IN_COMMENT
+
+Computing IV w Jesse Heines, Fall 2013
+Parser state = IN_COMMENT
+
+XML data from musicbrainz.org
+Parser state = IN_COMMENT
+
+-->
+Parser state = ENDING_COMMENT
+
+<?xml version="1.0" encoding="utf-8"?>
+Parser state = DIRECTIVE
+Directive = xml version="1.0" encoding="utf-8"
+
+<doolittle-album>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: doolittle-album
+Stack now contains: doolittle-album 
+
+
+<metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: metadata
+Stack now contains: doolittle-album metadata 
+
+
+<release id="abb2d8b4-e6d9-3619-812b-d2582554e24f" attr2="Test1" attr3="Test2">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: release
+Stack now contains: doolittle-album metadata release 
+
+
+<title>Doolittle</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Doolittle
+Stack is unchanged.
+
+<status>Official</status>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: status
+Element content found: Official
+Stack is unchanged.
+
+<quality>normal</quality>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: quality
+Element content found: normal
+Stack is unchanged.
+
+<text-representation>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: text-representation
+Stack now contains: doolittle-album metadata release text-representation 
+
+
+<language>eng</language>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: language
+Element content found: eng
+Stack is unchanged.
+
+<script>Latn</script>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: script
+Element content found: Latn
+Stack is unchanged.
+
+</text-representation>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: text-representation
+Stack now contains: doolittle-album metadata release 
+
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433" attr2="Test1" attr3="Test2">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release 
+
+
+<date>1989-04-17</date>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: date
+Element content found: 1989-04-17
+Stack is unchanged.
+
+<country>GB</country>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: country
+Element content found: GB
+Stack is unchanged.
+
+<release-event-list count="1">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: release-event-list
+Stack now contains: doolittle-album metadata release release-event-list 
+
+
+<release-event>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: release-event
+Stack now contains: doolittle-album metadata release release-event-list release-event 
+
+
+<date>1989-04-17</date>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: date
+Element content found: 1989-04-17
+Stack is unchanged.
+
+<area id="8a754a16-0027-3a29-b6d7-2b40ea0481ed" attr2="Test1" attr3="Test2">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: area
+Stack now contains: doolittle-album metadata release release-event-list release-event area 
+
+
+<name>United Kingdom</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: United Kingdom
+Stack is unchanged.
+
+<sort-name>United Kingdom</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: United Kingdom
+Stack is unchanged.
+
+<iso-3166-1-code-list>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: iso-3166-1-code-list
+Stack now contains: doolittle-album metadata release release-event-list release-event area iso-3166-1-code-list 
+
+
+<iso-3166-1-code>GB</iso-3166-1-code>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: iso-3166-1-code
+Element content found: GB
+Stack is unchanged.
+
+</iso-3166-1-code-list>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: iso-3166-1-code-list
+Stack now contains: doolittle-album metadata release release-event-list release-event area 
+
+
+</area>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: area
+Stack now contains: doolittle-album metadata release release-event-list release-event 
+
+
+</release-event>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: release-event
+Stack now contains: doolittle-album metadata release release-event-list 
+
+
+</release-event-list>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: release-event-list
+Stack now contains: doolittle-album metadata release 
+
+
+<barcode>5014436905025</barcode>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: barcode
+Element content found: 5014436905025
+Stack is unchanged.
+
+<asin>B000026YFS</asin>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: asin
+Element content found: B000026YFS
+Stack is unchanged.
+
+<cover-art-archive>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: cover-art-archive
+Stack now contains: doolittle-album metadata release cover-art-archive 
+
+
+<artwork>false</artwork>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: artwork
+Element content found: false
+Stack is unchanged.
+
+<count>0</count>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: count
+Element content found: 0
+Stack is unchanged.
+
+<front>false</front>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: front
+Element content found: false
+Stack is unchanged.
+
+<back>false</back>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: back
+Element content found: false
+Stack is unchanged.
+
+</cover-art-archive>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: cover-art-archive
+Stack now contains: doolittle-album metadata release 
+
+
+<label-info-list count="1">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: label-info-list
+Stack now contains: doolittle-album metadata release label-info-list 
+
+
+<label-info>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: label-info
+Stack now contains: doolittle-album metadata release label-info-list label-info 
+
+
+<catalog-number>CAD 905 CD</catalog-number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: catalog-number
+Element content found: CAD 905 CD
+Stack is unchanged.
+
+<label id="a539bb1e-f2e1-4b45-9db8-8053841e7503" attr2="Test1" attr3="Test2">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: label
+Stack now contains: doolittle-album metadata release label-info-list label-info label 
+
+
+<name>4AD</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: 4AD
+Stack is unchanged.
+
+<sort-name>4AD</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: 4AD
+Stack is unchanged.
+
+<label-code>5807</label-code>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: label-code
+Element content found: 5807
+Stack is unchanged.
+
+</label>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: label
+Stack now contains: doolittle-album metadata release label-info-list label-info 
+
+
+</label-info>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: label-info
+Stack now contains: doolittle-album metadata release label-info-list 
+
+
+</label-info-list>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: label-info-list
+Stack now contains: doolittle-album metadata release 
+
+
+<medium-list count="1">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: medium-list
+Stack now contains: doolittle-album metadata release medium-list 
+
+
+<medium>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: medium
+Stack now contains: doolittle-album metadata release medium-list medium 
+
+
+<position>1</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 1
+Stack is unchanged.
+
+<format>CD</format>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: format
+Element content found: CD
+Stack is unchanged.
+
+<disc-list count="22">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc-list
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="03fk1e2PboXslRE1esyC8v.tMcs-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174600</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174600
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="1LVaT0dSPvA8zDuixWJobsnO.FU-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174525</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174525
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="1YBXlrtbADgWAts.O2ZsIvz7UVM-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>176461</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 176461
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="4cs2H10t2BoM61W0gxCr_TEfoRE-" attr2="Test1" attr3="Test2">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174667</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174667
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="6mg3N7zy2HR0XVGHExNSiNRHHL8-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>176484</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 176484
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="AO51EaHVzbNYh7wWOeF_AP4Immg-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174610</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174610
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="AvloQ9g.Nf1AK4pd6oRESXd29NQ-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174455</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174455
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="BnOYyyAWpyNuB5slcAOcWY6Igzo-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174435</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174435
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="DsMZ7RBgWPAOKohqK08Bqk0l3ms-" attr2="Test1" attr3="Test2">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174455</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174455
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="EbuphpAYSz.8HFnqfTaTQckQjIY-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174525</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174525
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="Gy78RYWwqDtDWCUgxMrE6_XGTec-" attr2="Test1" attr3="Test2">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174720</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174720
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="Vh640hozn69FqCq8xjwIiJLFO6Q-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174440</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174440
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="aHp5F_XFMy0tU0T03PxMMnZkMQ0-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174330</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174330
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="eWkEPQ_aeGeE6fKEP2XnWPg_M.k-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174610</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174610
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="gC9n.rXvIun.SbiMhfGVcnCl7Lk-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174585</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174585
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="gYttnQycbenyJcDyz4ewRJP42Ps-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174640</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174640
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="gceqfJ6oLvDoSUObbVzitYCe23U-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174420</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174420
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="iK114.g.ONTQJ2MCXH150XCe0.Q-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174740</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174740
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="rPlN1WgPgTdNIbstH1JXwg4652g-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174455</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174455
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="t.Ol4BIA6yD_3wuna4gHrjo6C3s-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174428</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174428
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="wPGXRnccILmy6oF7Dym0zHtTyPA-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>174662</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 174662
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+<disc id="wxNQbe.W_.nJZyhi8xX48SK.q6c-">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list disc 
+
+
+<sectors>173022</sectors>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sectors
+Element content found: 173022
+Stack is unchanged.
+
+</disc>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc
+Stack now contains: doolittle-album metadata release medium-list medium disc-list 
+
+
+</disc-list>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: disc-list
+Stack now contains: doolittle-album metadata release medium-list medium 
+
+
+<track-list count="15" offset="0">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track-list
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="51087ffe-e3a8-3655-ad5f-d63af83d3f11">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>1</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 1
+Stack is unchanged.
+
+<number>1</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 1
+Stack is unchanged.
+
+<length>172466</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 172466
+Stack is unchanged.
+
+<recording id="f920f155-0864-4e7d-b310-6fe88ddfa8aa" attr2="Test1" attr3="Test2">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>Debaser</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Debaser
+Stack is unchanged.
+
+<length>172466</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 172466
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="2b33dc55-e2bc-3a19-b14b-e01ab41f1396">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>2</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 2
+Stack is unchanged.
+
+<number>2</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 2
+Stack is unchanged.
+
+<length>115706</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 115706
+Stack is unchanged.
+
+<recording id="dac6aecc-fbf7-418b-9bdc-1107469b7768">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>Tame</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Tame
+Stack is unchanged.
+
+<length>115706</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 115706
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="31c5b0ba-3180-3ad4-a032-55c24a49de90">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>3</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 3
+Stack is unchanged.
+
+<number>3</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 3
+Stack is unchanged.
+
+<length>124800</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 124800
+Stack is unchanged.
+
+<recording id="62721352-9eb6-45cf-93c4-9e5ecb178116">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>Wave of Mutilation</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Wave of Mutilation
+Stack is unchanged.
+
+<length>124800</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 124800
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="fd80e700-7aa2-349f-a615-2f81c82b35cc">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>4</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 4
+Stack is unchanged.
+
+<number>4</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 4
+Stack is unchanged.
+
+<length>154760</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 154760
+Stack is unchanged.
+
+<recording id="bef9dc6e-49d0-41e5-95f7-73fe9babf7b3">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>I Bleed</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: I Bleed
+Stack is unchanged.
+
+<length>154760</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 154760
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="5a4452b4-f3f3-34b7-a9d6-ca3cd46e80ab">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>5</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 5
+Stack is unchanged.
+
+<number>5</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 5
+Stack is unchanged.
+
+<length>201706</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 201706
+Stack is unchanged.
+
+<recording id="cbec6fa8-a950-471d-b92e-f0c39255f488">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>Here Comes Your Man</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Here Comes Your Man
+Stack is unchanged.
+
+<length>201706</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 201706
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="c4521373-a667-3810-ab04-d97bb45c0c29">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>6</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 6
+Stack is unchanged.
+
+<number>6</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 6
+Stack is unchanged.
+
+<length>141360</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 141360
+Stack is unchanged.
+
+<recording id="e675d6a8-a959-4021-8acf-677d522f2bf1">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>Dead</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Dead
+Stack is unchanged.
+
+<length>141360</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 141360
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="455c507c-afe2-3983-aa5c-e2961c6b457d">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>7</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 7
+Stack is unchanged.
+
+<number>7</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 7
+Stack is unchanged.
+
+<length>176466</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 176466
+Stack is unchanged.
+
+<recording id="7e4bcb1b-ebc2-4a26-905b-5303e54e6f3e">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>Monkey Gone to Heaven</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Monkey Gone to Heaven
+Stack is unchanged.
+
+<length>176466</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 176466
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="def2ab31-b1da-38e7-af57-b69cba6b9fab">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>8</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 8
+Stack is unchanged.
+
+<number>8</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 8
+Stack is unchanged.
+
+<length>125773</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 125773
+Stack is unchanged.
+
+<recording id="8365d142-fbba-4c26-b00e-4f0f58db5bb0">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>Mr. Grieves</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Mr. Grieves
+Stack is unchanged.
+
+<length>125773</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 125773
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="ba918004-db39-3c54-a201-b780144f0ec5">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>9</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 9
+Stack is unchanged.
+
+<number>9</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 9
+Stack is unchanged.
+
+<length>84200</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 84200
+Stack is unchanged.
+
+<recording id="40916596-c216-4d3d-b84c-ce6560cde96d">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>Crackity Jones</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Crackity Jones
+Stack is unchanged.
+
+<length>84200</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 84200
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="4a278001-243f-3bcb-b5e2-987fcc3ab063">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>10</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 10
+Stack is unchanged.
+
+<number>10</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 10
+Stack is unchanged.
+
+<length>163666</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 163666
+Stack is unchanged.
+
+<recording id="7c098bab-ad13-440c-ab7a-5cb8f6a4deec">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>La La Love You</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: La La Love You
+Stack is unchanged.
+
+<length>163666</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 163666
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="c5927931-d86d-3abb-8862-2d1bc5c83c04">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>11</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 11
+Stack is unchanged.
+
+<number>11</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 11
+Stack is unchanged.
+
+<length>231600</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 231600
+Stack is unchanged.
+
+<recording id="22394ab7-22d9-4d85-92a3-a2bf504ebb90">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>No. 13 Baby</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: No. 13 Baby
+Stack is unchanged.
+
+<length>231600</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 231600
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="2b3d84c0-2ad5-3c0c-882c-970806af4498">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>12</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 12
+Stack is unchanged.
+
+<number>12</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 12
+Stack is unchanged.
+
+<length>109533</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 109533
+Stack is unchanged.
+
+<recording id="93ad0c24-860c-4fd4-82a4-88a584aea09e">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>There Goes My Gun</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: There Goes My Gun
+Stack is unchanged.
+
+<length>109533</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 109533
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="3510c6a1-f9e6-3027-b5ef-714cbb85b525">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>13</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 13
+Stack is unchanged.
+
+<number>13</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 13
+Stack is unchanged.
+
+<length>211466</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 211466
+Stack is unchanged.
+
+<recording id="367f977e-21e6-4c94-8b56-d3647af67988">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>Hey</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Hey
+Stack is unchanged.
+
+<length>211466</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 211466
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="55fd6e7a-63d3-3110-b92e-fb37ee21c8f9">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>14</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 14
+Stack is unchanged.
+
+<number>14</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 14
+Stack is unchanged.
+
+<length>145226</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 145226
+Stack is unchanged.
+
+<recording id="ca3e4947-0699-4654-b52a-fb4ef95d63da">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>Silver</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Silver
+Stack is unchanged.
+
+<length>145226</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 145226
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+<track id="0f404d8d-04a6-37cc-b34a-e031c15a2716">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+<position>15</position>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: position
+Element content found: 15
+Stack is unchanged.
+
+<number>15</number>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: number
+Element content found: 15
+Stack is unchanged.
+
+<length>164906</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 164906
+Stack is unchanged.
+
+<recording id="1f8f65bf-c289-454d-a46c-700b393ea3bf">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+<title>Gouge Away</title>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: title
+Element content found: Gouge Away
+Stack is unchanged.
+
+<length>164906</length>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: length
+Element content found: 164906
+Stack is unchanged.
+
+<artist-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+<name-credit>
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+<artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+Parser state = ELEMENT_OPENING_TAG
+Opening element found: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit artist 
+
+
+<name>Pixies</name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: name
+Element content found: Pixies
+Stack is unchanged.
+
+<sort-name>Pixies</sort-name>
+Parser state = ELEMENT_NAME_AND_CONTENT
+Element tag found: sort-name
+Element content found: Pixies
+Stack is unchanged.
+
+</artist>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit name-credit 
+
+
+</name-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: name-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording artist-credit 
+
+
+</artist-credit>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: artist-credit
+Stack now contains: doolittle-album metadata release medium-list medium track-list track recording 
+
+
+</recording>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: recording
+Stack now contains: doolittle-album metadata release medium-list medium track-list track 
+
+
+</track>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track
+Stack now contains: doolittle-album metadata release medium-list medium track-list 
+
+
+</track-list>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: track-list
+Stack now contains: doolittle-album metadata release medium-list medium 
+
+
+</medium>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: medium
+Stack now contains: doolittle-album metadata release medium-list 
+
+
+</medium-list>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: medium-list
+Stack now contains: doolittle-album metadata release 
+
+
+</release>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: release
+Stack now contains: doolittle-album metadata 
+
+
+</metadata>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: metadata
+Stack now contains: doolittle-album 
+
+
+</doolittle-album>
+Parser state = ELEMENT_CLOSING_TAG
+Element closed: doolittle-album
+Stack now contains: 
+
+

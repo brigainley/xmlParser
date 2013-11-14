@@ -11,10 +11,11 @@
 #include <string>   
 #include <iomanip>  
 #include "element.h"
+#include "attribute.h"
 #include "auxFunctionsXML.h"
 
 using namespace std;
- 
+
 // global variables
 /**
  *  All possible parser states
@@ -24,16 +25,35 @@ using namespace std;
     ELEMENT_CLOSING_TAG, SELF_CLOSING_TAG,
     STARTING_COMMENT, IN_COMMENT, ENDING_COMMENT, ONE_LINE_COMMENT,
     ERROR };
-vector<Element *> vecAllElements;  // vector of pointers to elements
-vector<Element *> vecOpenElements; // vecotr of open elements
-vector<string> vecString ;  // all lines in file
-int lineNum = 0;  // counter to keep track of which line you are on in the file
-ParserState ps = STARTING_DOCUMENT; // sets initial global parser state
+    
+/** vector of pointers to all elements */
+vector<Element *> vecAllElements; 
+
+/** vector of open elements */
+vector<Element *> vecOpenElements;
+
+#pragma region VARIABLES
+/** all lines in a file */
+vector<string> vecString ;
+
+/** counter to keep track of what line in the file you're on */
+int lineNum = 0;
+
+/** indentation level */
+int indentLvl = 0; 
+
+/** sets initial global parser state */
+ParserState ps = STARTING_DOCUMENT;
 
 // helper functions, see above each definition for JavaDocs commentary
 string openingTag( string strOpening );
-void printState( ParserState ps, string str );
+void printState( ParserState ps, string str, ofstream& file );
 ParserState determineState( string str );
+string trim( string& str );
+void findAttr( string strFull, size_t spacePos );
+void printTree( ofstream& xmlTreeFile, int vectorPos );
+
+#pragma endregion VARIABLES
  
 /** openingTag checks for opening tags for each line in file
  *  Only called if an element opening tag is found in parser state reading function
@@ -74,83 +94,199 @@ string openingTag( string strOpening ) {
  */
 void readFile( ifstream& file ) {
 	
-	bool bContinue = true;  // loop controller	
+    bool bContinue = true;  // loop controller	
     char line[256];   // C version of a string, needed for file.getline()
-	string str;   // single, individual line read from the file
+    string str;   // single, individual line read from the file
+	ofstream parserStateFile; // file to which parserStates will be output
+	ofstream xmlTreeFile; // writes tree structure with children and attributes to file
 	
-	// loop to read lines in continuously and add them each to the end of the vector
-    while ( bContinue ) {    
-     file.getline( line, 256 );
-     str = line; 
-	 lineNum++; 
+	parserStateFile.open("parserStates.txt"); // creates text file for parser states
+	xmlTreeFile.open("xmlTreeFile.txt"); // creates text file for tree structure
+	    
+    // loop to read lines in continuously and add them each to the end of the vector
+    while ( file.getline( line, 256 ) ) {    
+        bContinue = true;
+        str = line; 
+        str = trim(str);
+        lineNum++; 
 
-	 // if the next string length is greater than 0 (if there is another string), continue
-     bContinue = ( str.length() > 0 );
-     if ( bContinue ) {
-      vecString.push_back( str );
+        if ( bContinue ) {
+        vecString.push_back( str );
 
-	  // print current string
-	  cout << str << endl;
+        // print current string
+        parserStateFile << str << endl;
 
-	  // determine what state the parser is in after the line just read and print it
-	  ps = determineState( str );
-	  printState( ps, str );
-	  }	
-	}
+        // determine what state the parser is in after the line just read and print it
+        ps = determineState( str );
+        printState( ps, str, parserStateFile );
+        }	
+    }
 
+	printTree( xmlTreeFile, 0 );
+
+	parserStateFile.close();
+	xmlTreeFile.close();
+	cout << "\nProgram Success. See output files." << endl;
 	return;
+}
+
+/**
+ *  Trim leading and trailing white space (spaces and tabs) from the string
+ *  passed as an argument and return the trimmed string
+ *  @param str The string being trimmed
+ *  @return The trimmed string
+ */
+string trim( string& str ) {
+	while( str[0] == ' ' || str[0] == '\t' || str[0] == '\r' ) {
+		str.erase( str.begin() );
+	}
+	while( str[str.length() - 1] == ' ' || str[str.length() - 1] == '\t'  || str[str.length() - 1] == '\r' ) {
+		str.erase( str.end() - 1 );
+	}
+	return str;
+}
+
+/** 
+ *  findAttr finds attributes within the line and adds them
+ *  to the current element's attribute vector
+ *  @param strFull The full string of the current line
+ *  @param spacePos The position of the first space in the tag 
+ */
+void findAttr( string strFull, size_t spacePos ) {
+    size_t newSpacePos, strBegin, equalSign, nextQuote;
+     
+	if( spacePos == 0 ) spacePos = strFull.find( ' ' );
+    if( spacePos == -1 ) return;
+    
+    strBegin = spacePos + 1; // find position of character after first space        
+    newSpacePos = strFull.find( ' ', strBegin ); // see if any spaces exist in tag after last space
+    equalSign = strFull.find( '=', strBegin ); // finds equal sign
+	nextQuote = strFull.find( '"', equalSign + 3 );
+    
+    string strName( strFull, strBegin, equalSign - strBegin ); // construct new strings using original string
+    string strContent( strFull, equalSign + 2, nextQuote - ( equalSign + 2 ));
+    
+    Attribute* tmpAttr = new Attribute ( strName, lineNum, strContent );  // create a new Attribute object
+    vecAllElements.back() -> setNewAttribute( tmpAttr ); // add the new object to the vector of attributes
+
+    findAttr( strFull, newSpacePos );
+    
 }
 
 /** printState that displays parser state based on global enumeration
  *  @param ps The current state of the parser
  *  @param str The last line read in from the file
  */
-void printState( ParserState ps, string str ) {
+void printState( ParserState ps, string str, ofstream& parserStateFile ) {
 	
-    cout << "Parser state = ";
+    parserStateFile << "Parser state = ";
     // switch statement to display parser state
     switch( ps ) {
-        case UNKNOWN: cout << "UNKNOWN\n"; break;
-        case STARTING_DOCUMENT: cout << "STARTING_DOCUMENT\n"; break;
+        case UNKNOWN: parserStateFile << "UNKNOWN\n"; break;
+        case STARTING_DOCUMENT: parserStateFile << "STARTING_DOCUMENT\n"; break;
         case DIRECTIVE: 
-            cout << "DIRECTIVE\n"; 
-            cout << "Directive = " << str.substr(2, str.length() - 4 ) << endl;
+            parserStateFile << "DIRECTIVE\n"; 
+            parserStateFile << "Directive = " << str.substr(2, str.length() - 4 ) << endl;
             break;
         case ELEMENT_OPENING_TAG: 
-            cout << "ELEMENT_OPENING_TAG\n"; 
+            parserStateFile << "ELEMENT_OPENING_TAG\n"; 
             vecOpenElements.push_back(vecAllElements.back());
-            cout << "Opening element found: " << vecOpenElements[vecOpenElements.size() - 1] -> getStrElementName() << endl;
-            cout << "Stack now contains: ";
+            parserStateFile << "Opening element found: " << vecOpenElements[vecOpenElements.size() - 1] -> getStrElementName() << endl;
+            parserStateFile << "Stack now contains: ";
             for( int k = 0; k <= vecOpenElements.size() - 1; k++ ) {
-                cout << vecOpenElements[k] -> getStrElementName() << " " ;
+                parserStateFile << vecOpenElements[k] -> getStrElementName() << " " ;
             }
-            cout << "\n\n";
+            parserStateFile << "\n\n";
             break;
-        case ELEMENT_CONTENT: cout << "ELEMENT_CONTENT\n"; break;
+        case ELEMENT_CONTENT: parserStateFile << "ELEMENT_CONTENT\n"; break;
         case ELEMENT_NAME_AND_CONTENT: 
-            cout << "ELEMENT_NAME_AND_CONTENT\n"; 
-            cout << "Element tag found: " << vecAllElements[vecAllElements.size() - 1] -> getStrElementName() << endl;
-            cout << "Element content found: " << vecAllElements[vecAllElements.size() - 1] -> getStrElementContent() << endl;
-            cout << "Stack is unchanged.\n";
+            parserStateFile << "ELEMENT_NAME_AND_CONTENT\n"; 
+            parserStateFile << "Element tag found: " << vecAllElements[vecAllElements.size() - 1] -> getStrElementName() << endl;
+            parserStateFile << "Element content found: " << vecAllElements[vecAllElements.size() - 1] -> getStrElementContent() << endl;
+            parserStateFile << "Stack is unchanged.\n";
             break;
         case ELEMENT_CLOSING_TAG: 
-            cout << "ELEMENT_CLOSING_TAG\n"; 
-            cout << "Element closed: " << vecOpenElements[vecOpenElements.size() - 1] -> getStrElementName() << endl;
+            parserStateFile << "ELEMENT_CLOSING_TAG\n"; 
+            parserStateFile << "Element closed: " << vecOpenElements[vecOpenElements.size() - 1] -> getStrElementName() << endl;
             vecOpenElements.pop_back();
+            parserStateFile << "Stack now contains: ";
+            for( int k = 0; k <= vecOpenElements.size() - 1; k++ ) {
+                if( vecOpenElements.size() == 0 ) break;
+                parserStateFile << vecOpenElements[k] -> getStrElementName() << " " ;
+            }
+            parserStateFile << "\n\n";
             break;
-        case SELF_CLOSING_TAG: cout << "SELF_CLOSING_TAG\n"; break;
-        case STARTING_COMMENT: cout << "STARTING_COMMENT\n"; break;
-        case IN_COMMENT: cout << "IN_COMMENT\n"; break;
-        case ENDING_COMMENT: cout << "ENDING_COMMENT\n"; break;
+        case SELF_CLOSING_TAG: parserStateFile << "SELF_CLOSING_TAG\n"; break;
+        case STARTING_COMMENT: parserStateFile << "STARTING_COMMENT\n"; break;
+        case IN_COMMENT: parserStateFile << "IN_COMMENT\n"; break;
+        case ENDING_COMMENT: parserStateFile << "ENDING_COMMENT\n"; break;
         case ONE_LINE_COMMENT: 
-            cout << "ONE_LINE_COMMENT\n"; 
-            cout << "Comment = " << str.substr(4, str.length() - 7 ) << endl;
+            parserStateFile << "ONE_LINE_COMMENT\n"; 
+            parserStateFile << "Comment = " << str.substr(4, str.length() - 7 ) << endl;
             break;
-        case ERROR: cout << "ERROR\n"; break;
-        default: cout << "DEFAULT\n"; break;
+        case ERROR: parserStateFile << "ERROR\n"; break;
+        default: parserStateFile << "DEFAULT\n"; break;
     }
-    cout << endl;
+    parserStateFile << endl;
     return;
+}
+
+/** printTree prints the state of the XML tree with attributes and child levels 
+ *  @param xmlTreeFile The file where all output is being saved
+ *  @param vectorPos The new position of elements to be sorted and their children
+ */
+void printTree( ofstream& xmlTreeFile, int vectorPos ) {
+
+	int newVecPos = vectorPos + 1, numberOfChildren = 0;
+
+	// cycle through until end of vector is reached
+	if( vectorPos < vecAllElements.size() ) {
+
+		// print indent asterisks for visual output
+		for( int i = 1; i < vecAllElements.at(vectorPos) -> getIndentationLevel(); i++ ) {
+			xmlTreeFile << "* ";
+		}
+
+		// print element name and line number
+		xmlTreeFile << "Element \"" << vecAllElements.at(vectorPos) -> getStrElementName() << "\" was found at line " 
+			<< vecAllElements.at(vectorPos) -> getNLineNo() << " with ";
+
+		// print content if there is any
+		if( vecAllElements.at(vectorPos) -> getStrElementContent() != " " ) {
+			xmlTreeFile << "\"" << vecAllElements.at(vectorPos) -> getStrElementContent() << "\" content, ";
+		}
+		else {
+			xmlTreeFile << "no content, ";
+		}
+
+		// print attributes 
+		if( vecAllElements.at(vectorPos) -> getVecAttributeSize() != 0 ) {
+			for( int i = 0; i < vecAllElements.at(vectorPos) -> getVecAttributeSize(); i++ ) {
+				xmlTreeFile << "attribute \"" << vecAllElements.at(vectorPos) -> getAttributeName(i) << "\"";
+				xmlTreeFile << " with attribute content \"" << vecAllElements.at(vectorPos) -> getAttributeContent(i) << "\", ";
+			}
+		}
+		else xmlTreeFile << "with no attributes ";
+		// print number of children
+		xmlTreeFile << "and "; 
+
+		if( newVecPos < vecAllElements.size() ) { // check if this is the last element in tree
+			while( vecAllElements.at(newVecPos) -> getIndentationLevel() != vecAllElements.at(vectorPos) -> getIndentationLevel() ) {
+				numberOfChildren++;
+				newVecPos++;
+				if( newVecPos >= vecAllElements.size() ) break;
+			}
+		}
+		else numberOfChildren = 0;
+
+		xmlTreeFile << numberOfChildren << " children." << endl;
+
+		newVecPos = vectorPos + 1;
+
+		// call function recursively to traverse entire tree
+		printTree( xmlTreeFile, newVecPos );
+	}
+	return;
 }
 
 /** determineState figures out the current state of the parser based on the file line just read 
@@ -163,7 +299,7 @@ ParserState determineState( string str ) {
     string elementContent;
     
     // begin enormous if clauses to determine state
-    if( str.back() != '>' ) {
+    if( str[str.length()-1] != '>' ) {
         if( ps == STARTING_COMMENT || ps == IN_COMMENT ) {
             ps = IN_COMMENT;
             return ps;
@@ -191,6 +327,7 @@ ParserState determineState( string str ) {
     }
     else if( str[str.find('<') + 1] == '/' ) {
         ps = ELEMENT_CLOSING_TAG;
+        indentLvl--;
         return ps;
     }
     else {		
@@ -209,8 +346,9 @@ ParserState determineState( string str ) {
             start = str.find_first_of( '>', start+1 );
     
             elementContent = str.substr(start + 1, (str.find_first_of('<', start) - start - 1) ); // finds substring between opening and closing tags
-            Element* tmpEl = new Element ( newElement, lineNum, elementContent );  // create a new Element object
+			Element* tmpEl = new Element ( newElement, lineNum, elementContent, indentLvl + 1 );  // create a new Element object
             vecAllElements.push_back( tmpEl );  // add the new object to the vector
+			findAttr(str, 0); // use function again to find attributes
     
             return ps;
         }
@@ -218,17 +356,20 @@ ParserState determineState( string str ) {
             ps = SELF_CLOSING_TAG;
     
             elementContent = " ";
-            Element* tmpEl = new Element ( newElement, lineNum, elementContent );  // create a new Element object
+			Element* tmpEl = new Element ( newElement, lineNum, elementContent, indentLvl );  // create a new Element object
             vecAllElements.push_back( tmpEl );  // add the new object to the vector
+			findAttr(str, 0); // use function again to find attributes
     
             return ps;
         }
         else {
             ps = ELEMENT_OPENING_TAG;
+            indentLvl++;
     
             elementContent = " ";
-            Element* tmpEl = new Element ( newElement, lineNum, elementContent );  // create a new Element object
+			Element* tmpEl = new Element ( newElement, lineNum, elementContent, indentLvl );  // create a new Element object
             vecAllElements.push_back( tmpEl );  // add the new object to the vector
+            findAttr(str, 0); // use function again to find attributes
     
             return ps;
         }

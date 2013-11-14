@@ -1,0 +1,17 @@
+<!--
+	Author: Brianna Gainley, brianna_gainley@student.uml.edu
+	File: doolittle.xml
+	Created September 16th, 2013
+	Computing IV w Jesse Heines, Fall 2013
+	XML data from musicbrainz.org
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<doolittle-album>
+  <metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+    <release id="abb2d8b4-e6d9-3619-812b-d2582554e24f">
+      <title>Doolittle</title>
+      <status>Official</status>
+      <quality>normal</quality>
+    </release>
+  </metadata>
+</doolittle-album>

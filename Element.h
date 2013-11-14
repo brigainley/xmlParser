@@ -11,6 +11,8 @@
   
     #include <string>
     #include <iostream>
+    #include <vector>
+    #include "attribute.h"
   
     using namespace std;
  
@@ -27,7 +29,16 @@
     string strTagContent;
     
     /** Line number at which the element opening tag was found */
-	int nLineNum;      
+    int nLineNum;    
+
+	/** Indentation level of this element */
+	int indentationLvl;
+   
+    /** Vector of other elements */
+    vector<Element *> vecChildren;
+    
+    /** Vector of attributes for this element */
+    vector<Attribute *> vecAttributes;
 
     public:
     /** Default constructor, which initializes data members to placeholder values */
@@ -38,7 +49,7 @@
      *  @param nLineNo The line on which the element was found
      *  @param strElementContent The content of the element
      */
-    Element( string strElementName, int nLineNo, string strElementContent );     
+	Element( string strElementName, int nLineNo, string strElementContent, int indentationLevel );     
 
     /** Sets the line number of the current element
      *  @param lineNo The line number on which the element was found
@@ -54,15 +65,41 @@
      *  @param strElementContent The content of the element
      */
 	void setStrElementContent( string strElementContent ); 
+        
+    /** Sets the next attribute in the vector
+     *  @param attrNewAttribute The newest attribute
+     */
+        void setNewAttribute( Attribute* attrNewAttribute );
+
+	/** Sets the indentation level of the current element 
+	 *  @param indentLevel The current indentation level
+	 */
+		void setIndentationLevel( int indentationLevel );
   
     /** Return the line number at which the current element was found */
-	int getNLineNo() const;       
+		int getNLineNo() const;       
     
+	/** Returns the indentation level of the element */
+		int getIndentationLevel() const;
+
     /** Return the name of the element found */
-    string getStrElementName() const;      
+        string getStrElementName() const;      
     
     /** Return the content of the element */
-	string getStrElementContent() const; 
+		string getStrElementContent() const; 
+
+	/** Returns the size of the attribute vector */
+		int getVecAttributeSize() const;
+		
+	/** Returns an attribute name specified by passed vector index
+	 *  @param i The vector index to be accessed
+	 */
+		string getAttributeName( int i ) const;
+
+	/** Returns an attribute content specified by passed vector index
+	 *  @param i The vector index to be accessed
+	 */
+		string getAttributeContent( int i ) const;
 				 
     };
     

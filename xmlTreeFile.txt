@@ -1,0 +1,268 @@
+Element "doolittle-album" was found at line 9 with no content, with no attributes and 267 children.
+* Element "metadata" was found at line 10 with no content, attribute "xmlns" with attribute content "http://musicbrainz.org/ns/mmd-2.0#", and 266 children.
+* * Element "release" was found at line 11 with no content, attribute "id" with attribute content "abb2d8b4-e6d9-3619-812b-d2582554e24f", attribute "attr2" with attribute content "Test1", attribute "attr3" with attribute content "Test2", and 265 children.
+* * * Element "title" was found at line 12 with "Doolittle" content, with no attributes and 0 children.
+* * * Element "status" was found at line 13 with "Official" content, with no attributes and 0 children.
+* * * Element "quality" was found at line 14 with "normal" content, with no attributes and 0 children.
+* * * Element "text-representation" was found at line 15 with no content, with no attributes and 2 children.
+* * * * Element "language" was found at line 16 with "eng" content, with no attributes and 0 children.
+* * * * Element "script" was found at line 17 with "Latn" content, with no attributes and 1 children.
+* * * Element "artist-credit" was found at line 19 with no content, with no attributes and 4 children.
+* * * * Element "name-credit" was found at line 20 with no content, with no attributes and 6 children.
+* * * * * Element "artist" was found at line 21 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", attribute "attr2" with attribute content "Test1", attribute "attr3" with attribute content "Test2", and 6 children.
+* * * * * * Element "name" was found at line 22 with "Pixies" content, with no attributes and 0 children.
+* * * * * * Element "sort-name" was found at line 23 with "Pixies" content, with no attributes and 6 children.
+* * * Element "date" was found at line 27 with "1989-04-17" content, with no attributes and 0 children.
+* * * Element "country" was found at line 28 with "GB" content, with no attributes and 0 children.
+* * * Element "release-event-list" was found at line 29 with no content, attribute "count" with attribute content "1", and 7 children.
+* * * * Element "release-event" was found at line 30 with no content, with no attributes and 9 children.
+* * * * * Element "date" was found at line 31 with "1989-04-17" content, with no attributes and 0 children.
+* * * * * Element "area" was found at line 32 with no content, attribute "id" with attribute content "8a754a16-0027-3a29-b6d7-2b40ea0481ed", attribute "attr2" with attribute content "Test1", attribute "attr3" with attribute content "Test2", and 13 children.
+* * * * * * Element "name" was found at line 33 with "United Kingdom" content, attribute "Kingdom</name>" with attribute content "name>United Kingdom</name>", and 0 children.
+* * * * * * Element "sort-name" was found at line 34 with "United Kingdom" content, attribute "Kingdom</sort-name>" with attribute content "sort-name>United Kingdom</sort-name>", and 0 children.
+* * * * * * Element "iso-3166-1-code-list" was found at line 35 with no content, with no attributes and 12 children.
+* * * * * * * Element "iso-3166-1-code" was found at line 36 with "GB" content, with no attributes and 20 children.
+* * * Element "barcode" was found at line 41 with "5014436905025" content, with no attributes and 0 children.
+* * * Element "asin" was found at line 42 with "B000026YFS" content, with no attributes and 0 children.
+* * * Element "cover-art-archive" was found at line 43 with no content, with no attributes and 4 children.
+* * * * Element "artwork" was found at line 44 with "false" content, with no attributes and 0 children.
+* * * * Element "count" was found at line 45 with "0" content, with no attributes and 0 children.
+* * * * Element "front" was found at line 46 with "false" content, with no attributes and 0 children.
+* * * * Element "back" was found at line 47 with "false" content, with no attributes and 1 children.
+* * * Element "label-info-list" was found at line 49 with no content, attribute "count" with attribute content "1", and 6 children.
+* * * * Element "label-info" was found at line 50 with no content, with no attributes and 6 children.
+* * * * * Element "catalog-number" was found at line 51 with "CAD 905 CD" content, attribute "905 CD</catalog-number>" with attribute content "catalog-number>CAD 905 CD</catalog-number>", attribute "CD</catalog-number>" with attribute content "catalog-number>CAD 905 CD</catalog-number>", and 0 children.
+* * * * * Element "label" was found at line 52 with no content, attribute "id" with attribute content "a539bb1e-f2e1-4b45-9db8-8053841e7503", attribute "attr2" with attribute content "Test1", attribute "attr3" with attribute content "Test2", and 5 children.
+* * * * * * Element "name" was found at line 53 with "4AD" content, with no attributes and 0 children.
+* * * * * * Element "sort-name" was found at line 54 with "4AD" content, with no attributes and 0 children.
+* * * * * * Element "label-code" was found at line 55 with "5807" content, with no attributes and 5 children.
+* * * Element "medium-list" was found at line 59 with no content, attribute "count" with attribute content "1", and 229 children.
+* * * * Element "medium" was found at line 60 with no content, with no attributes and 228 children.
+* * * * * Element "position" was found at line 61 with "1" content, with no attributes and 0 children.
+* * * * * Element "format" was found at line 62 with "CD" content, with no attributes and 0 children.
+* * * * * Element "disc-list" was found at line 63 with no content, attribute "count" with attribute content "22", and 44 children.
+* * * * * * Element "disc" was found at line 64 with no content, attribute "id" with attribute content "03fk1e2PboXslRE1esyC8v.tMcs-", and 1 children.
+* * * * * * * Element "sectors" was found at line 65 with "174600" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 67 with no content, attribute "id" with attribute content "1LVaT0dSPvA8zDuixWJobsnO.FU-", and 1 children.
+* * * * * * * Element "sectors" was found at line 68 with "174525" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 70 with no content, attribute "id" with attribute content "1YBXlrtbADgWAts.O2ZsIvz7UVM-", and 1 children.
+* * * * * * * Element "sectors" was found at line 71 with "176461" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 73 with no content, attribute "id" with attribute content "4cs2H10t2BoM61W0gxCr_TEfoRE-", attribute "attr2" with attribute content "Test1", attribute "attr3" with attribute content "Test2", and 1 children.
+* * * * * * * Element "sectors" was found at line 74 with "174667" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 76 with no content, attribute "id" with attribute content "6mg3N7zy2HR0XVGHExNSiNRHHL8-", and 1 children.
+* * * * * * * Element "sectors" was found at line 77 with "176484" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 79 with no content, attribute "id" with attribute content "AO51EaHVzbNYh7wWOeF_AP4Immg-", and 1 children.
+* * * * * * * Element "sectors" was found at line 80 with "174610" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 82 with no content, attribute "id" with attribute content "AvloQ9g.Nf1AK4pd6oRESXd29NQ-", and 1 children.
+* * * * * * * Element "sectors" was found at line 83 with "174455" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 85 with no content, attribute "id" with attribute content "BnOYyyAWpyNuB5slcAOcWY6Igzo-", and 1 children.
+* * * * * * * Element "sectors" was found at line 86 with "174435" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 88 with no content, attribute "id" with attribute content "DsMZ7RBgWPAOKohqK08Bqk0l3ms-", attribute "attr2" with attribute content "Test1", attribute "attr3" with attribute content "Test2", and 1 children.
+* * * * * * * Element "sectors" was found at line 89 with "174455" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 91 with no content, attribute "id" with attribute content "EbuphpAYSz.8HFnqfTaTQckQjIY-", and 1 children.
+* * * * * * * Element "sectors" was found at line 92 with "174525" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 94 with no content, attribute "id" with attribute content "Gy78RYWwqDtDWCUgxMrE6_XGTec-", attribute "attr2" with attribute content "Test1", attribute "attr3" with attribute content "Test2", and 1 children.
+* * * * * * * Element "sectors" was found at line 95 with "174720" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 97 with no content, attribute "id" with attribute content "Vh640hozn69FqCq8xjwIiJLFO6Q-", and 1 children.
+* * * * * * * Element "sectors" was found at line 98 with "174440" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 100 with no content, attribute "id" with attribute content "aHp5F_XFMy0tU0T03PxMMnZkMQ0-", and 1 children.
+* * * * * * * Element "sectors" was found at line 101 with "174330" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 103 with no content, attribute "id" with attribute content "eWkEPQ_aeGeE6fKEP2XnWPg_M.k-", and 1 children.
+* * * * * * * Element "sectors" was found at line 104 with "174610" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 106 with no content, attribute "id" with attribute content "gC9n.rXvIun.SbiMhfGVcnCl7Lk-", and 1 children.
+* * * * * * * Element "sectors" was found at line 107 with "174585" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 109 with no content, attribute "id" with attribute content "gYttnQycbenyJcDyz4ewRJP42Ps-", and 1 children.
+* * * * * * * Element "sectors" was found at line 110 with "174640" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 112 with no content, attribute "id" with attribute content "gceqfJ6oLvDoSUObbVzitYCe23U-", and 1 children.
+* * * * * * * Element "sectors" was found at line 113 with "174420" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 115 with no content, attribute "id" with attribute content "iK114.g.ONTQJ2MCXH150XCe0.Q-", and 1 children.
+* * * * * * * Element "sectors" was found at line 116 with "174740" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 118 with no content, attribute "id" with attribute content "rPlN1WgPgTdNIbstH1JXwg4652g-", and 1 children.
+* * * * * * * Element "sectors" was found at line 119 with "174455" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 121 with no content, attribute "id" with attribute content "t.Ol4BIA6yD_3wuna4gHrjo6C3s-", and 1 children.
+* * * * * * * Element "sectors" was found at line 122 with "174428" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 124 with no content, attribute "id" with attribute content "wPGXRnccILmy6oF7Dym0zHtTyPA-", and 1 children.
+* * * * * * * Element "sectors" was found at line 125 with "174662" content, with no attributes and 1 children.
+* * * * * * Element "disc" was found at line 127 with no content, attribute "id" with attribute content "wxNQbe.W_.nJZyhi8xX48SK.q6c-", and 2 children.
+* * * * * * * Element "sectors" was found at line 128 with "173022" content, with no attributes and 2 children.
+* * * * * Element "track-list" was found at line 131 with no content, attribute "count" with attribute content "15", attribute "offset" with attribute content "0", and 180 children.
+* * * * * * Element "track" was found at line 132 with no content, attribute "id" with attribute content "51087ffe-e3a8-3655-ad5f-d63af83d3f11", and 11 children.
+* * * * * * * Element "position" was found at line 133 with "1" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 134 with "1" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 135 with "172466" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 136 with no content, attribute "id" with attribute content "f920f155-0864-4e7d-b310-6fe88ddfa8aa", attribute "attr2" with attribute content "Test1", attribute "attr3" with attribute content "Test2", and 8 children.
+* * * * * * * * Element "title" was found at line 137 with "Debaser" content, with no attributes and 0 children.
+* * * * * * * * Element "length" was found at line 138 with "172466" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 139 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 140 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 141 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 142 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 143 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 149 with no content, attribute "id" with attribute content "2b33dc55-e2bc-3a19-b14b-e01ab41f1396", and 11 children.
+* * * * * * * Element "position" was found at line 150 with "2" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 151 with "2" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 152 with "115706" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 153 with no content, attribute "id" with attribute content "dac6aecc-fbf7-418b-9bdc-1107469b7768", and 8 children.
+* * * * * * * * Element "title" was found at line 154 with "Tame" content, with no attributes and 0 children.
+* * * * * * * * Element "length" was found at line 155 with "115706" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 156 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 157 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 158 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 159 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 160 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 166 with no content, attribute "id" with attribute content "31c5b0ba-3180-3ad4-a032-55c24a49de90", and 11 children.
+* * * * * * * Element "position" was found at line 167 with "3" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 168 with "3" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 169 with "124800" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 170 with no content, attribute "id" with attribute content "62721352-9eb6-45cf-93c4-9e5ecb178116", and 8 children.
+* * * * * * * * Element "title" was found at line 171 with "Wave of Mutilation" content, attribute "of Mutilation</title>" with attribute content "title>Wave of Mutilation</title>", attribute "Mutilation</title>" with attribute content "title>Wave of Mutilation</title>", and 0 children.
+* * * * * * * * Element "length" was found at line 172 with "124800" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 173 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 174 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 175 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 176 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 177 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 183 with no content, attribute "id" with attribute content "fd80e700-7aa2-349f-a615-2f81c82b35cc", and 11 children.
+* * * * * * * Element "position" was found at line 184 with "4" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 185 with "4" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 186 with "154760" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 187 with no content, attribute "id" with attribute content "bef9dc6e-49d0-41e5-95f7-73fe9babf7b3", and 8 children.
+* * * * * * * * Element "title" was found at line 188 with "I Bleed" content, attribute "Bleed</title>" with attribute content "title>I Bleed</title>", and 0 children.
+* * * * * * * * Element "length" was found at line 189 with "154760" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 190 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 191 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 192 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 193 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 194 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 200 with no content, attribute "id" with attribute content "5a4452b4-f3f3-34b7-a9d6-ca3cd46e80ab", and 11 children.
+* * * * * * * Element "position" was found at line 201 with "5" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 202 with "5" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 203 with "201706" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 204 with no content, attribute "id" with attribute content "cbec6fa8-a950-471d-b92e-f0c39255f488", and 8 children.
+* * * * * * * * Element "title" was found at line 205 with "Here Comes Your Man" content, attribute "Comes Your Man</title>" with attribute content "title>Here Comes Your Man</title>", attribute "Your Man</title>" with attribute content "title>Here Comes Your Man</title>", attribute "Man</title>" with attribute content "title>Here Comes Your Man</title>", and 0 children.
+* * * * * * * * Element "length" was found at line 206 with "201706" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 207 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 208 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 209 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 210 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 211 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 217 with no content, attribute "id" with attribute content "c4521373-a667-3810-ab04-d97bb45c0c29", and 11 children.
+* * * * * * * Element "position" was found at line 218 with "6" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 219 with "6" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 220 with "141360" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 221 with no content, attribute "id" with attribute content "e675d6a8-a959-4021-8acf-677d522f2bf1", and 8 children.
+* * * * * * * * Element "title" was found at line 222 with "Dead" content, with no attributes and 0 children.
+* * * * * * * * Element "length" was found at line 223 with "141360" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 224 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 225 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 226 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 227 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 228 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 234 with no content, attribute "id" with attribute content "455c507c-afe2-3983-aa5c-e2961c6b457d", and 11 children.
+* * * * * * * Element "position" was found at line 235 with "7" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 236 with "7" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 237 with "176466" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 238 with no content, attribute "id" with attribute content "7e4bcb1b-ebc2-4a26-905b-5303e54e6f3e", and 8 children.
+* * * * * * * * Element "title" was found at line 239 with "Monkey Gone to Heaven" content, attribute "Gone to Heaven</title>" with attribute content "title>Monkey Gone to Heaven</title>", attribute "to Heaven</title>" with attribute content "title>Monkey Gone to Heaven</title>", attribute "Heaven</title>" with attribute content "title>Monkey Gone to Heaven</title>", and 0 children.
+* * * * * * * * Element "length" was found at line 240 with "176466" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 241 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 242 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 243 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 244 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 245 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 251 with no content, attribute "id" with attribute content "def2ab31-b1da-38e7-af57-b69cba6b9fab", and 11 children.
+* * * * * * * Element "position" was found at line 252 with "8" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 253 with "8" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 254 with "125773" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 255 with no content, attribute "id" with attribute content "8365d142-fbba-4c26-b00e-4f0f58db5bb0", and 8 children.
+* * * * * * * * Element "title" was found at line 256 with "Mr. Grieves" content, attribute "Grieves</title>" with attribute content "title>Mr. Grieves</title>", and 0 children.
+* * * * * * * * Element "length" was found at line 257 with "125773" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 258 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 259 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 260 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 261 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 262 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 268 with no content, attribute "id" with attribute content "ba918004-db39-3c54-a201-b780144f0ec5", and 11 children.
+* * * * * * * Element "position" was found at line 269 with "9" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 270 with "9" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 271 with "84200" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 272 with no content, attribute "id" with attribute content "40916596-c216-4d3d-b84c-ce6560cde96d", and 8 children.
+* * * * * * * * Element "title" was found at line 273 with "Crackity Jones" content, attribute "Jones</title>" with attribute content "title>Crackity Jones</title>", and 0 children.
+* * * * * * * * Element "length" was found at line 274 with "84200" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 275 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 276 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 277 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 278 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 279 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 285 with no content, attribute "id" with attribute content "4a278001-243f-3bcb-b5e2-987fcc3ab063", and 11 children.
+* * * * * * * Element "position" was found at line 286 with "10" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 287 with "10" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 288 with "163666" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 289 with no content, attribute "id" with attribute content "7c098bab-ad13-440c-ab7a-5cb8f6a4deec", and 8 children.
+* * * * * * * * Element "title" was found at line 290 with "La La Love You" content, attribute "La Love You</title>" with attribute content "title>La La Love You</title>", attribute "Love You</title>" with attribute content "title>La La Love You</title>", attribute "You</title>" with attribute content "title>La La Love You</title>", and 0 children.
+* * * * * * * * Element "length" was found at line 291 with "163666" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 292 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 293 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 294 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 295 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 296 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 302 with no content, attribute "id" with attribute content "c5927931-d86d-3abb-8862-2d1bc5c83c04", and 11 children.
+* * * * * * * Element "position" was found at line 303 with "11" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 304 with "11" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 305 with "231600" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 306 with no content, attribute "id" with attribute content "22394ab7-22d9-4d85-92a3-a2bf504ebb90", and 8 children.
+* * * * * * * * Element "title" was found at line 307 with "No. 13 Baby" content, attribute "13 Baby</title>" with attribute content "title>No. 13 Baby</title>", attribute "Baby</title>" with attribute content "title>No. 13 Baby</title>", and 0 children.
+* * * * * * * * Element "length" was found at line 308 with "231600" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 309 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 310 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 311 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 312 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 313 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 319 with no content, attribute "id" with attribute content "2b3d84c0-2ad5-3c0c-882c-970806af4498", and 11 children.
+* * * * * * * Element "position" was found at line 320 with "12" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 321 with "12" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 322 with "109533" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 323 with no content, attribute "id" with attribute content "93ad0c24-860c-4fd4-82a4-88a584aea09e", and 8 children.
+* * * * * * * * Element "title" was found at line 324 with "There Goes My Gun" content, attribute "Goes My Gun</title>" with attribute content "title>There Goes My Gun</title>", attribute "My Gun</title>" with attribute content "title>There Goes My Gun</title>", attribute "Gun</title>" with attribute content "title>There Goes My Gun</title>", and 0 children.
+* * * * * * * * Element "length" was found at line 325 with "109533" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 326 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 327 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 328 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 329 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 330 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 336 with no content, attribute "id" with attribute content "3510c6a1-f9e6-3027-b5ef-714cbb85b525", and 11 children.
+* * * * * * * Element "position" was found at line 337 with "13" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 338 with "13" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 339 with "211466" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 340 with no content, attribute "id" with attribute content "367f977e-21e6-4c94-8b56-d3647af67988", and 8 children.
+* * * * * * * * Element "title" was found at line 341 with "Hey" content, with no attributes and 0 children.
+* * * * * * * * Element "length" was found at line 342 with "211466" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 343 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 344 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 345 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 346 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 347 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 353 with no content, attribute "id" with attribute content "55fd6e7a-63d3-3110-b92e-fb37ee21c8f9", and 11 children.
+* * * * * * * Element "position" was found at line 354 with "14" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 355 with "14" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 356 with "145226" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 357 with no content, attribute "id" with attribute content "ca3e4947-0699-4654-b52a-fb4ef95d63da", and 8 children.
+* * * * * * * * Element "title" was found at line 358 with "Silver" content, with no attributes and 0 children.
+* * * * * * * * Element "length" was found at line 359 with "145226" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 360 with no content, with no attributes and 9 children.
+* * * * * * * * * Element "name-credit" was found at line 361 with no content, with no attributes and 11 children.
+* * * * * * * * * * Element "artist" was found at line 362 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 11 children.
+* * * * * * * * * * * Element "name" was found at line 363 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 364 with "Pixies" content, with no attributes and 10 children.
+* * * * * * Element "track" was found at line 370 with no content, attribute "id" with attribute content "0f404d8d-04a6-37cc-b34a-e031c15a2716", and 11 children.
+* * * * * * * Element "position" was found at line 371 with "15" content, with no attributes and 0 children.
+* * * * * * * Element "number" was found at line 372 with "15" content, with no attributes and 0 children.
+* * * * * * * Element "length" was found at line 373 with "164906" content, with no attributes and 0 children.
+* * * * * * * Element "recording" was found at line 374 with no content, attribute "id" with attribute content "1f8f65bf-c289-454d-a46c-700b393ea3bf", and 7 children.
+* * * * * * * * Element "title" was found at line 375 with "Gouge Away" content, attribute "Away</title>" with attribute content "title>Gouge Away</title>", and 0 children.
+* * * * * * * * Element "length" was found at line 376 with "164906" content, with no attributes and 0 children.
+* * * * * * * * Element "artist-credit" was found at line 377 with no content, with no attributes and 4 children.
+* * * * * * * * * Element "name-credit" was found at line 378 with no content, with no attributes and 3 children.
+* * * * * * * * * * Element "artist" was found at line 379 with no content, attribute "id" with attribute content "b6b2bb8d-54a9-491f-9607-7b546023b433", and 2 children.
+* * * * * * * * * * * Element "name" was found at line 380 with "Pixies" content, with no attributes and 0 children.
+* * * * * * * * * * * Element "sort-name" was found at line 381 with "Pixies" content, with no attributes and 0 children.

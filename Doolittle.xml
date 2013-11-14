@@ -8,7 +8,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doolittle-album>
   <metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
-    <release id="abb2d8b4-e6d9-3619-812b-d2582554e24f">
+    <release id="abb2d8b4-e6d9-3619-812b-d2582554e24f" attr2="Test1" attr3="Test2">
       <title>Doolittle</title>
       <status>Official</status>
       <quality>normal</quality>
@@ -18,7 +18,7 @@
       </text-representation>
       <artist-credit>
         <name-credit>
-          <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433">
+          <artist id="b6b2bb8d-54a9-491f-9607-7b546023b433" attr2="Test1" attr3="Test2">
             <name>Pixies</name>
             <sort-name>Pixies</sort-name>
           </artist>
@@ -29,7 +29,7 @@
       <release-event-list count="1">
         <release-event>
           <date>1989-04-17</date>
-          <area id="8a754a16-0027-3a29-b6d7-2b40ea0481ed">
+          <area id="8a754a16-0027-3a29-b6d7-2b40ea0481ed" attr2="Test1" attr3="Test2">
             <name>United Kingdom</name>
             <sort-name>United Kingdom</sort-name>
             <iso-3166-1-code-list>
@@ -49,7 +49,7 @@
       <label-info-list count="1">
         <label-info>
           <catalog-number>CAD 905 CD</catalog-number>
-          <label id="a539bb1e-f2e1-4b45-9db8-8053841e7503">
+          <label id="a539bb1e-f2e1-4b45-9db8-8053841e7503" attr2="Test1" attr3="Test2">
             <name>4AD</name>
             <sort-name>4AD</sort-name>
             <label-code>5807</label-code>
@@ -70,7 +70,7 @@
             <disc id="1YBXlrtbADgWAts.O2ZsIvz7UVM-">
               <sectors>176461</sectors>
             </disc>
-            <disc id="4cs2H10t2BoM61W0gxCr_TEfoRE-">
+            <disc id="4cs2H10t2BoM61W0gxCr_TEfoRE-" attr2="Test1" attr3="Test2">
               <sectors>174667</sectors>
             </disc>
             <disc id="6mg3N7zy2HR0XVGHExNSiNRHHL8-">
@@ -85,13 +85,13 @@
             <disc id="BnOYyyAWpyNuB5slcAOcWY6Igzo-">
               <sectors>174435</sectors>
             </disc>
-            <disc id="DsMZ7RBgWPAOKohqK08Bqk0l3ms-">
+            <disc id="DsMZ7RBgWPAOKohqK08Bqk0l3ms-" attr2="Test1" attr3="Test2">
               <sectors>174455</sectors>
             </disc>
             <disc id="EbuphpAYSz.8HFnqfTaTQckQjIY-">
               <sectors>174525</sectors>
             </disc>
-            <disc id="Gy78RYWwqDtDWCUgxMrE6_XGTec-">
+            <disc id="Gy78RYWwqDtDWCUgxMrE6_XGTec-" attr2="Test1" attr3="Test2">
               <sectors>174720</sectors>
             </disc>
             <disc id="Vh640hozn69FqCq8xjwIiJLFO6Q-">
@@ -133,7 +133,7 @@
               <position>1</position>
               <number>1</number>
               <length>172466</length>
-              <recording id="f920f155-0864-4e7d-b310-6fe88ddfa8aa">
+              <recording id="f920f155-0864-4e7d-b310-6fe88ddfa8aa" attr2="Test1" attr3="Test2">
                 <title>Debaser</title>
                 <length>172466</length>
                 <artist-credit>

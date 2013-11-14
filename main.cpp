@@ -13,7 +13,6 @@
 #include <vector>   
 #include <string>   
 #include <iomanip>  
-#include "element.h"
 #include "auxFunctionsXML.h"
 
 using namespace std;
